@@ -112,7 +112,7 @@ fun NoteListScreen(navController: NavController, viewModel: NoteViewModel)
                 },
                 content = {
 
-                    Column() {
+                    Column {
                         SearchBar(query = noteQuery)
                         NoteList(
                             notes = notes.value.orPlaceHolderList(),
